@@ -1,0 +1,341 @@
+/* Banking.css */
+
+.content-page {
+  background-color: var(--gray-50);
+  min-height: 100vh;
+}
+
+.page-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  padding: var(--spacing-10) 0;
+  margin-bottom: var(--spacing-8);
+}
+
+.page-header h1 {
+  color: var(--white);
+  margin-bottom: var(--spacing-2);
+  font-size: var(--text-4xl);
+}
+
+.page-description {
+  font-size: var(--text-xl);
+  opacity: 0.9;
+  max-width: 700px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* Content Sections */
+.content-section {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+.content-section h2 {
+  font-size: var(--text-2xl);
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-6);
+  padding-bottom: var(--spacing-3);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.content-section p {
+  font-size: var(--text-lg);
+  color: var(--gray-700);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-4);
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-6);
+}
+
+.benefit-card {
+  background-color: var(--gray-50);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-normal) ease, box-shadow var(--transition-normal) ease;
+  border-top: 3px solid var(--primary);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-card h3 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-3);
+  font-size: var(--text-xl);
+}
+
+.benefit-card p {
+  font-size: var(--text-base);
+  color: var(--gray-700);
+  margin-bottom: 0;
+}
+
+/* Account Types */
+.account-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-6);
+}
+
+.account-type {
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-normal) ease, box-shadow var(--transition-normal) ease;
+}
+
+.account-type:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.account-type h3 {
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-3);
+  font-size: var(--text-xl);
+  padding-bottom: var(--spacing-2);
+  border-bottom: 2px solid var(--primary);
+}
+
+.account-type p {
+  font-size: var(--text-base);
+  margin-bottom: var(--spacing-3);
+}
+
+.account-type ul {
+  padding-left: var(--spacing-6);
+  margin-bottom: var(--spacing-2);
+}
+
+.account-type li {
+  margin-bottom: var(--spacing-2);
+  color: var(--gray-700);
+}
+
+/* Steps Container */
+.steps-container {
+  margin-top: var(--spacing-6);
+}
+
+.step {
+  display: flex;
+  margin-bottom: var(--spacing-6);
+  gap: var(--spacing-4);
+}
+
+.step-number {
+  background-color: var(--primary);
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--text-xl);
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-3);
+  color: var(--gray-800);
+}
+
+.step-content ul {
+  margin: var(--spacing-3) 0;
+  padding-left: var(--spacing-6);
+}
+
+.step-content li {
+  margin-bottom: var(--spacing-2);
+  color: var(--gray-700);
+}
+
+/* Tools Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-6);
+}
+
+.tool-card {
+  background-color: var(--gray-50);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.tool-card h3 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-2);
+  font-size: var(--text-lg);
+}
+
+.tool-card p {
+  font-size: var(--text-base);
+  color: var(--gray-600);
+  margin-bottom: 0;
+}
+
+/* Tips Container */
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-6);
+}
+
+.tip-card {
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid #ffcc00;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.tip-card h3 {
+  color: #cc9900;
+  margin-bottom: var(--spacing-2);
+  font-size: var(--text-lg);
+}
+
+.tip-card p {
+  font-size: var(--text-base);
+  color: var(--gray-600);
+  margin-bottom: 0;
+}
+
+/* CTA Box */
+.cta-box {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  padding: var(--spacing-8);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  margin-bottom: var(--spacing-8);
+}
+
+.cta-box h2 {
+  color: var(--white);
+  margin-bottom: var(--spacing-2);
+  font-size: var(--text-2xl);
+}
+
+.cta-box p {
+  margin-bottom: var(--spacing-6);
+  opacity: 0.9;
+  font-size: var(--text-lg);
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast) ease;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .page-header {
+    padding: var(--spacing-6) 0;
+  }
+  
+  .page-header h1 {
+    font-size: var(--text-3xl);
+  }
+  
+  .page-description {
+    font-size: var(--text-lg);
+  }
+  
+  .content-section {
+    padding: var(--spacing-6);
+  }
+  
+  .content-section h2 {
+    font-size: var(--text-xl);
+  }
+  
+  .content-section p {
+    font-size: var(--text-base);
+  }
+  
+  .benefit-card,
+  .account-type {
+    padding: var(--spacing-4);
+  }
+}
+
+@media (max-width: 576px) {
+  .step {
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+  
+  .step-number {
+    margin-bottom: var(--spacing-2);
+  }
+  
+  .tools-grid,
+  .tips-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .account-type h3 {
+    font-size: var(--text-lg);
+  }
+  
+  .benefit-card h3 {
+    font-size: var(--text-lg);
+  }
+}
