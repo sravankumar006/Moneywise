@@ -27,7 +27,6 @@ const SavingsCalculator = () => {
   useEffect(() => {
     const calculateSavings = () => {
       const monthlyRate = interestRate / 100 / 12;
-      const totalMonths = years * 12;
       
       let balance = initialAmount;
       let totalContributions = initialAmount;
